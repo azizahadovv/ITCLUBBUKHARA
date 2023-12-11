@@ -1,9 +1,10 @@
 import React from 'react';
+import { Error } from '../imgs/expimg';
 
 function ErrorPage(props) {
     return (
-        <div>
-            Error page is not supported
+        <div className='flex items-center justify-center h-screen max-w-full' >
+            <img className='tablet:max-w-lg minMobil:w-full' src={Error} alt="This is Error Page" />
         </div>
     );
 }
