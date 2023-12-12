@@ -1,13 +1,10 @@
 import React from 'react';
 
 function Loader(props) {
-    
+
     return (
-
-        <div>
-
-            <div class="loader"></div> 
-           
+        <div className='loaderded'>
+            <div class="loader"></div>
         </div>
     );
 }
