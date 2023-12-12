@@ -1,1 +1,8 @@
 export { default as NAVBAR } from './Navbar'
+export { default as ABOUT } from './About'
+export { default as APPROACH } from './Approach'
+export { default as COURSES } from './Courses'
+export { default as FOOTER } from './Footer'
+export { default as LOCATION } from './Location'
+// export { default as NAVBAR } from './Navbar'
+// export { default as NAVBAR } from './Navbar'
