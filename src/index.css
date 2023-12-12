@@ -14,18 +14,14 @@
 body {
   width: 100%;
   height: 100vh;
-  background: rgb(81, 26, 221);
-  background: linear-gradient(
-    96deg,
-    rgba(81, 26, 221, 1) 35%,
-    rgba(179, 25, 95, 1) 47%,
-    rgba(68, 6, 240, 1) 82%
-  );
+  background-image: url(./components/imgs/background_it.jpg );
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .scale-in-center {
-  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -35,18 +31,21 @@ body {
     transform: scale(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes scale-in-center {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -65,24 +64,30 @@ body {
   background-size: 16px 16px;
   animation: l32-1 1s infinite, l32-2 1s infinite;
 }
+
 @keyframes l32-1 {
+
   0%,
   100% {
     width: 45px;
     height: 45px;
   }
+
   35%,
   65% {
     width: 65px;
     height: 65px;
   }
 }
+
 @keyframes l32-2 {
+
   0%,
   40% {
     background-position: 0 0, 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%,
       100% 0, 50% 0, 50% 50%;
   }
+
   60%,
   100% {
     background-position: 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0,
