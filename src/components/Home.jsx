@@ -1,10 +1,10 @@
 import React from 'react';
-import { LOADER } from './exporPage';
+import Loader from './utils/Loader';
 
 function Home(props) {
     return (
-        <div className=''>
-            <LOADER />
+        <div>
+            <Loader />
         </div>
     );
 }
