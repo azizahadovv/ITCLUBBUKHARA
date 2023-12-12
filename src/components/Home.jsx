@@ -4,7 +4,7 @@ import { LOADER } from './exporPage';
 function Home(props) {
     return (
         <div>
-            <LOADER />
+            {/* <LOADER /> */}
         </div>
     );
 }
