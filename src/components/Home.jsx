@@ -1,5 +1,5 @@
 import React from 'react';
-import { LOADER } from './exporPage';
+// import { LOADER } from './exporPage';
 import { ABOUT, FOOTER, NAVBAR } from './pages/homeExp';
 
 function Home(props) {
@@ -8,6 +8,7 @@ function Home(props) {
             <NAVBAR/>
             <ABOUT/>
             <FOOTER/>
+
             {/* <LOADER /> */}
         </div>
     );
