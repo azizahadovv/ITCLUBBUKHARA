@@ -1,9 +1,10 @@
 import React from 'react';
+import LogIn from './LogIn';
 
 function Register(props) {
     return (
-        <div>
-            Register.jsx
+        <div className='flex items-center justify-center'>
+            <LogIn />
         </div>
     );
 }

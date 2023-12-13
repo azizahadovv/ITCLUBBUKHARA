@@ -14,14 +14,15 @@
 body {
   width: 100%;
   height: 100vh;
-  background-image: url(./components/imgs/background_it.jpg );
+  background-image: url(./components/imgs/background_it.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .scale-in-center {
-  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -122,3 +123,4 @@ body {
     background-position: 100% 0, 100% 100%, 0 100%, 0 0;
   }
 }
+
