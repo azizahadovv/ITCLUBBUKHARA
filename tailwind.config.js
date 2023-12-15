@@ -5,6 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
+
       screens: {
         minMobil: "320px",
         // => @media (min-width: 320px) { ... }

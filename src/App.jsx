@@ -5,7 +5,7 @@ export default function App() {
     <div>
       <Routes>
         <Route path="/" element={<HOME />} />
-        <Route path="/admin" element={<ADMIN />} />
+        {/* <Route path="/admin" element={<ADMIN />} /> */}
         <Route path="/register" element={<REGISTER />} />
         <Route path="*" element={<ERROEPAGE />} />
       </Routes>
