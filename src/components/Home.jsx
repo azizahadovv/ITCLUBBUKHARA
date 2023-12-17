@@ -1,4 +1,3 @@
-import React from 'react';
 // import { LOADER } from './exporPage';
 import { ABOUT, FOOTER, HERO, NAVBAR } from './pages/homeExp';
 import { useEffect, useState } from 'react';
@@ -21,11 +20,11 @@ function Home(props) {
 
     return (
         <div>
-            <NAVBAR setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <HERO/>
             <ABOUT/>
             <FOOTER/>
             {/* <LOADER /> */}
+            <NAVBAR setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <REGISTER setModalVisible={setModalVisible} modalVisible={modalVisible} Toaster={Toaster} />
             <ToastContainer />
         </div>
