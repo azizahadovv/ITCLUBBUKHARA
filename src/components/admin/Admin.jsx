@@ -1,26 +1,42 @@
-import React, { useState } from 'react';
-import Rodal from 'rodal';
-import 'rodal/lib/rodal.css';
+import { collection, getDoc, getDocs } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
+import { db } from '../../firebase/firebase';
+
 
 function Admin(props) {
-    const [modalVisible, setModalVisible] = useState(true)
+    useEffect(() => {
+        getUserDb()
+    }, [])
+    const [dbMap, setDbMap] = useState([])
+    console.log(dbMap);
+    function getUserDb() {
+        const col = collection(db, 'users')
+        getDocs(col).then((res) => {
+            let arr = res.docs.map((res) => {
+                return { ...res.data(), id: res.id }
+            })
+            setDbMap(arr)
+        }).catch((err) => {
+            console.log(err);
+        })
+    }
+
+
+
     return (
-        <div className='w-full min-h-[70px] bg-[rgba(0,0,0,.6)]'>
-            <nav className='container w-full min-h-[70px]  m-auto flex items-center justify-end py-2 px-5'>
-                <button onClick={() => setModalVisible(true)} className='px-4 py-3 bg-[#222] text-white rounded-xl w-max'>Add user</button>
-            </nav>
-            <Rodal width={500} height={450} visible={modalVisible} onClose={() => setModalVisible(false)}>
-                <form className='flex flex-col items-center justify-start w-full h-full gap-5 bg-red-400 p-7'>
-                    <input className='w-[90%] h-6 py-2 px-3 ' placeholder='text...' />
-                    <input className='w-[90%] h-6 py-2 px-3 ' placeholder='text...' />
-                    <input className='w-[90%] h-6 py-2 px-3 ' placeholder='text...' />
-                    <input className='w-[90%] h-6 py-2 px-3 ' placeholder='text...' />
-                    <div className='flex items-center justify-around w-full'>
-                        <button>CANCEL</button>
-                        <button>SAVE</button>
+        <div className='w-full min-h-[100vh] bg-[rgba(0,0,0,.3)] p-3 flex gap-3 justify-start items-start'>
+            {
+                dbMap.map((res) => {
+                    return <div className="mb-3 card text-bg-secondary w-[250px]" >
+                        <div class="card-header"><span className='text-green-500'>Name:</span> {res?.fullName}</div>
+                        <div class="card-body">
+                            <h5 class="card-title"><span className='text-yellow-400'>Tell:</span> {res?.Phone}</h5>
+                            <p class="card-text flex flex-wrap"><span className='text-red-400'>Email:</span> {res?.email}</p>
+                        </div>
                     </div>
-                </form>
-            </Rodal>
+                })
+            }
+
         </div>
     );
 }
