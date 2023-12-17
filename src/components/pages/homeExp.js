@@ -1,4 +1,5 @@
 export { default as NAVBAR } from './Navbar'
+export { default as HERO } from './Hero'
 export { default as ABOUT } from './About'
 export { default as APPROACH } from './Approach'
 export { default as COURSES } from './Courses'

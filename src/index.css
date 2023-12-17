@@ -9,9 +9,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kalnia", serif;
+  color: white;
 }
 
-body {
+*::selection {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.fullBg {
   width: 100%;
   height: 100vh;
   /* background-color: rgba(0, 0, 0, .6); */
@@ -19,11 +25,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: auto;
+  position: fixed;
+  /* z-index: -1; */
 }
 
 .scale-in-center {
-  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -136,4 +144,3 @@ body {
     background-position: 100% 0, 100% 100%, 0 100%, 0 0;
   }
 }
-
