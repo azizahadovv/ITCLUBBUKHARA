@@ -4,7 +4,7 @@ function Approach(props) {
     return (
         <div>
             Approach
-Approach
+            Approach
         </div>
     );
 }
