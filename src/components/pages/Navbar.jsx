@@ -3,7 +3,7 @@ import { LOGO } from '../imgs/expimg';
 
 function Navbar({ setModalVisible, modalVisible }) {
     return (
-        <div className='w-full min-h-[70px] bg-[rgba(0,0,0,.5)] fixed px-5'>
+        <div className='w-full min-h-[70px] bg-[rgba(0,0,0,.8)] fixed px-5'>
             <nav className='flex items-center justify-between minMobil:w-full tablet:max-w-[900px] m-auto  h-[70px]'>
                 <div className='flex items-center justify-center h-full align-baseline '>
                     <img className='w-20 h-full -rotate-[5deg] flex items-center justify-center' src={LOGO} alt="#" />

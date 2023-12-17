@@ -17,16 +17,15 @@ function Home(props) {
     }
 
 
-
     return (
         <div>
+            <NAVBAR setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <HERO/>
             <ABOUT/>
-            <FOOTER/>
             {/* <LOADER /> */}
-            <NAVBAR setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <REGISTER setModalVisible={setModalVisible} modalVisible={modalVisible} Toaster={Toaster} />
             <ToastContainer />
+            <FOOTER/>
         </div>
     );
 }

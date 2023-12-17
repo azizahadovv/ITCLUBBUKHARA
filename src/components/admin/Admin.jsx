@@ -32,7 +32,6 @@ function Admin(props) {
     }
 
 
-
     return (
         <div className='w-full min-h-[100vh] bg-[rgba(0,0,0,.3)] p-3 flex gap-3 justify-start items-start flex-wrap'>
             {
