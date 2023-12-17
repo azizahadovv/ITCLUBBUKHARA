@@ -1,1 +1,1 @@
-export { default as Error } from "./error.svg";
+export { default as Error } from "./error.svg"; 
