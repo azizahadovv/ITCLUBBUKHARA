@@ -1,5 +1,5 @@
 // import { LOADER } from './exporPage';
-import { ABOUT, APPROACH, COURSES, FOOTER, HERO, INTRODUCTION, LOCATION, NAVBAR } from './pages/homeExp';
+import { ABOUT, FOOTER, HERO, NAVBAR } from './pages/homeExp';
 import React, { useEffect, useState } from 'react';
 import { LOADER, REGISTER } from './exporPage';
 import { ToastContainer, toast } from 'react-toastify';
@@ -17,20 +17,16 @@ function Home(props) {
     }
 
 
-
     return (
         <div>
             <NAVBAR setModalVisible={setModalVisible} modalVisible={modalVisible} />
-            <HERO setModalVisible={setModalVisible} modalVisible={modalVisible} />
-            <INTRODUCTION />
+            <HERO setModalVisible={setModalVisible} modalVisible={modalVisible}/>
             <ABOUT />
-            <COURSES />
-            <APPROACH />
-            <LOCATION />
             <FOOTER />
             {/* <LOADER /> */}
             <REGISTER setModalVisible={setModalVisible} modalVisible={modalVisible} Toaster={Toaster} />
             <ToastContainer />
+            <FOOTER/>
         </div>
     );
 }
