@@ -17,6 +17,7 @@ function Register({ setModalVisible, modalVisible, Toaster }) {
 
     function AddUserModal() {
         if (fullName && Phone && email) {
+            setModalVisible(false)
             const userCollection = collection(db, 'users')
             addDoc(userCollection, {
                 fullName,
@@ -24,7 +25,6 @@ function Register({ setModalVisible, modalVisible, Toaster }) {
                 email
             }).then((res) => {
                 Toaster(1)
-                setModalVisible(false)
                 NullData()
 
             }).catch((err) => {
@@ -39,9 +39,9 @@ function Register({ setModalVisible, modalVisible, Toaster }) {
 
     return (
         <div className='flex items-center justify-center'>
-            <Rodal height={380} visible={modalVisible} onClose={() => setModalVisible(false)}>
+            <Rodal height={400} visible={modalVisible} onClose={() => setModalVisible(false)}>
                 <form className='flex flex-col justify-center gap-2 py-4'>
-                    <p className='text-sm text-center leading-2'>Biz bilan bog'laning!!</p>
+                    <p className='text-center text-black text-[18px] leading-1'>Biz bilan bog'laning!!</p>
                     <div className="mb-3 form-floating">
                         <input value={fullName} onChange={(e) => (setFullName(e.target.value))} required type="text" min={5} className="form-control" id="floatingPassword" placeholder='Full Name ' />
                         <label htmlFor="floatingNumber">Full Name</label>
