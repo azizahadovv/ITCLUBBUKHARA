@@ -8,8 +8,10 @@ function Location(props) {
                 <div className='w-[400px] py-2 px-4 flex flex-col gap-3'>
                     <h1 className='text-3xl'>BUKHARA</h1>
                     <div className='w-full h-40 bg-yellow-300'></div>
-                    <h3 className='text-white border-b border-[#b0adad]'>Buxoro shahar Qayum murtazoyev </h3>
-                    <div className='border-b border-[#797777]'><span className='text-[17px]   text-[#bfc2ca]'>Mo‘ljal</span>
+
+                    <h3 className='text-white border-b border-[#797777]'>Buxoro shahar Qayum murtazoyev </h3>
+
+                    <div className='border-b border-[#797777]'><span className='text-[17px]   text-[#667085]'>Mo‘ljal</span>
                         <h3 className='text-2xl text-white'>Texnologiya Instituti ro'parasi, Joker Game Club</h3>
                     </div>
                     <div className='border-b border-[#797777]'><span className='text-[17px]   text-[#bfc2ca]'>Ish vaqti</span>
