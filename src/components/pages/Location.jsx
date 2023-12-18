@@ -12,7 +12,7 @@ function Location(props) {
                     <h3 className='text-white border-b border-[#797777]'>Buxoro shahar Qayum murtazoyev </h3>
 
                     <div className='border-b border-[#797777]'><span className='text-[17px]   text-[#667085]'>Mo‘ljal</span>
-                        <h3 className='text-2xl text-white'>Texnologiya Instituti ro'parasi, Joker Game Club</h3>
+                        <h3 className='text-2xl text-white'>Texnologiya Instituti ro'parasi, Joker Game Club pastida.</h3>
                     </div>
                     <div className='border-b border-[#797777]'><span className='text-[17px]   text-[#bfc2ca]'>Ish vaqti</span>
                         <h3 className='text-2xl text-white'>09:00 - 18:00</h3>
