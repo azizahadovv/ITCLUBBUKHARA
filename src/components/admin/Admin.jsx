@@ -41,7 +41,7 @@ function Admin(props) {
 
 
     return (
-        <div className='w-full min-h-[100vh] bg-[rgba(0,0,0,.3)]  flex gap-3 justify-start items-start flex-wrap'>
+        <div className='w-full min-h-[100vh] bg-[rgba(0,0,0,.3)]  flex gap-3 justify-start items-start flex-wrap p-6'>
             {
                 load ? <LOADER /> : dbMap.length === 0 ? <h1 className='text-white '>Hozircha hech qanaqa ma'lumot topilmadi!?</h1> : dbMap.map((res) => {
                     return <div className="mb-3 card text-bg-secondary w-[250px] relative" >

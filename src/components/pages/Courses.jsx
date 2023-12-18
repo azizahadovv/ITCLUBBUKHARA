@@ -3,9 +3,9 @@ import { BESIC, MOBILE, WEB } from '../imgs/expimg';
 
 function Courses(props) {
     return (
-        <div className='min-h-[605px] flex flex-col items-center justify-around bg-[rgba(0,0,0,.4)] brightness-95 border-t border-b border-[rgba(156,152,152,.7)]'>
+        <div className='min-h-[605px] flex flex-col items-center justify-around bg-[rgba(0,0,0,.4)] brightness-95 border-t border-b border-[rgba(156,152,152,.7)] text-white'>
             <h2 className='mb-[10px]'>Courses Offered</h2>
-            <div className="flex justify-around flex-wrap gap-5">
+            <div className="flex flex-wrap justify-around gap-5">
                 <div className='w-[290px] h-[350px] flex flex-col items-start justify-between'>
                     <img className='w-[270px] h-[170px] rounded-lg' src={BESIC} alt="" />
                     <span className='text-2xl minMobil:text-lg'>Programming Basics</span>
