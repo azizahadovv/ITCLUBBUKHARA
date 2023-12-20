@@ -36,6 +36,12 @@ function Register({ setModalVisible, modalVisible, Toaster }) {
             Toaster(2)
         }
     }
+    function ExitModal() {
+        setModalVisible(false)
+        NullData()
+    }
+
+
 
     return (
         <div className='flex items-center justify-center'>
@@ -55,7 +61,7 @@ function Register({ setModalVisible, modalVisible, Toaster }) {
                         <label htmlFor="floatingInput">Email: example@exp.ex</label>
                     </div>
                     <div className='flex items-center justify-center gap-3 center'>
-                        <button type='button' className='btn btn-danger w-50'>Cancel</button>
+                        <button type='button' onClick={ExitModal} className='btn btn-danger w-50'>Cancel</button>
                         <button type='button' onClick={AddUserModal} className='btn btn-success w-50'>Add</button>
                     </div>
                 </form>

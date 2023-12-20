@@ -12,6 +12,12 @@
   
 }
 
+
+.transitionHover{
+  transition-duration: .8s;
+}
+
+
 *::selection {
   background-color: darkgoldenrod;
   color: white;
