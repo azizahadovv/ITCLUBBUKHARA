@@ -15,11 +15,11 @@ function Footer({ Toaster1 }) {
                 </div>
                 <div className='flex flex-col flex-wrap items-start justify-center gap-3'>
                     <div className='flex items-center justify-center gap-3'>
-                        <Link to={'https://www.facebook.com/azizahadovv/'}><FaFacebook className='hover:text-[blue]  text-gray-200 text-[22px]' /></Link>
-                        <Link to={'https://www.facebook.com/azizahadovv/'}><FaInstagram className='hover:text-[red]  text-gray-200 text-[22px]' /></Link>
-                        <Link to={'www.linkedin.com/in/азиз-ахадов-5b2591263'}><FaLinkedin className='hover:text-[blue] text-gray-200  text-[22px]' /></Link>
-                        <Link to={'https://t.me/IT_CLUB_BUKHARA'}><FaTelegram className='hover:text-[blue] text-gray-200  text-[22px]' /></Link>
-                        <Link to={'https://youtube.com/@azizahadov?si=RRj36rm4RYdnbP7b'}><FaYoutube className='hover:text-[red] text-gray-200  text-[22px]' /></Link>
+                        <Link to={'https://www.facebook.com/azizahadovv/'}><FaFacebook className='hover:text-[blue] transitionHover text-gray-200 text-[22px]' /></Link>
+                        <Link to={'https://www.facebook.com/azizahadovv/'}><FaInstagram className='hover:text-[red] transitionHover text-gray-200 text-[22px]' /></Link>
+                        <Link to={'www.linkedin.com/in/азиз-ахадов-5b2591263'}><FaLinkedin className='hover:text-[blue] text-gray-200 transitionHover text-[22px]' /></Link>
+                        <Link to={'https://t.me/IT_CLUB_BUKHARA'}><FaTelegram className='hover:text-[blue] text-gray-200  text-[22px] transitionHover' /></Link>
+                        <Link to={'https://youtube.com/@azizahadov?si=RRj36rm4RYdnbP7b'}><FaYoutube className='hover:text-[red] text-gray-200  text-[22px] transitionHover' /></Link>
                     </div>
                     <p className='text-white tablet:text-[25px] minMobil:text-[22px] leading-4 flex items-center justify-center align-text-bottom gap-2 font-mono'><span className='text-gray-400 tablet:text-[20px] minMobil:text-[18px]'>Call-markaz: </span> +998 93-544-56-58</p>
                     <p className='text-[12px] leading-2 font-mono minMobil:block tablet:hidden'>© “IT CLUB BUKHARA”, 2023 - Barcha huquqlar himoyalangan.</p>
