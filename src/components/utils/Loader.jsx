@@ -4,7 +4,7 @@ function Loader(props) {
 
     return (
         <div className='loaderded'>
-            <div class="loader"></div>
+            <div className="loader"></div>
         </div>
     );
 }
