@@ -1,3 +1,10 @@
 {
-    "Navbar_button" : "Bog'lanish"
+    "Navbar_button" : "Bog'lanish",
+    "Hero-title" : "Dasturlash O'quv Markazi",
+    "Hero-text" : "Bizning Dasturlashni o'rganish markazimizga xush kelibsiz - texnologiya va dasturlash dunyosini ochish uchun yagona manzil. Qiziqarli darslar, tajribali o'qituvchilar va amaliy o'rganish bilan biz qattiq, ammo qiziqarli o'quv muhitini ta'minlaymiz. Bugun ro'yxatdan o'ting va dasturlash dunyosini kashf qilish sayohatingizni boshlang.",
+    "Hero-button" : "Ro'yxatdan O'tish",
+    "Introduction-title" : "Kirish",
+    "Introduction-text" : "Dasturlash bugungi raqamli dunyoda muhim mahoratdir. Bizning Dasturlashni o'rganish markazimiz barcha darajadagi o'quvchilar uchun dasturlash tushunchalari va texnologiyalarini o'zlashtirishlari uchun mukammal platformani taqdim etadi. <br /> Kurslarimiz va tajribali o'qituvchilarimiz bilan biz o'rganishni qiziqarli va samarali qilamiz.",
+    "About-title":"Biz haqimizda",
+    "About-card-title":"Biz haqimizda"
 }

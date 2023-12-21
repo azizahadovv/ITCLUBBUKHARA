@@ -1,3 +1,10 @@
 {
-    "Navbar_button" : "Call Me"
+    "Navbar_button" : "Call Me",
+    "Hero-title" : "Programming Learning Center",
+    "Hero-text": "Welcome to our Programming Learning Center - your one-stop destination for unlocking the world of technology and programming. With engaging classes, experienced instructors, and hands-on learning, we  provide a rigorous yet fun learning environment. Enroll today and start your journey of discovering the world  of programming.",
+    "Hero-button" : "Registration",
+    "Introduction-title" : "Introduction",
+    "Introduction-text" : "Programming is an essential skill in today's digital world. Our Programming Learning Center provides the perfect platform for learners of all levels to master programming concepts and technologies. With our courses and experienced instructors, we make learning both fun and effective.",
+    "About-title":"About Us",
+    "About-card-title":"Who We Are"
 }
