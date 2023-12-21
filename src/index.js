@@ -1,14 +1,18 @@
-import React from 'react';
+import React ,{ Suspense , lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import "./language/i18next"
+import { LOADER } from './components/exporPage';
+const App = lazy(() => import('./App'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Suspense fallback={<LOADER/>}>
+        <App />
+      </Suspense>
     </BrowserRouter>
   </React.StrictMode>
 );

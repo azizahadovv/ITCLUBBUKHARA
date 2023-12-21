@@ -13,6 +13,7 @@ function Approach(props) {
 
 
     return (
+
         <div className='w-full min-h-[400px] bg-[rgba(0,0,0,.4)] border-y flex items-center justify-center '>
             <Swiper
                 className='bg-red-400 tablet:w-[950px] minMobil:w-full'
@@ -32,10 +33,9 @@ function Approach(props) {
                     </div>
                 </SwiperSlide>
 
-
-
             </Swiper>
         </div>
+
     );
 }
 
