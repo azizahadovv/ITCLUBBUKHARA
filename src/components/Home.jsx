@@ -31,9 +31,9 @@ function Home() {
             <NAVBAR setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <HERO setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <INTRODUCTION />
+            <APPROACH />
             <ABOUT />
             <COURSES />
-            <APPROACH />
             <LOCATION />
             <FOOTER Toaster1={Toaster1} />
             {/* <LOADER /> */}

@@ -41,8 +41,6 @@ function Register({ setModalVisible, modalVisible, Toaster }) {
         NullData()
     }
 
-
-
     return (
         <div className='flex items-center justify-center'>
             <Rodal height={400} visible={modalVisible} onClose={() => setModalVisible(false)}>
