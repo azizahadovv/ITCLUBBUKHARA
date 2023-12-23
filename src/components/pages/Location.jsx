@@ -1,6 +1,7 @@
 import React from "react";
 import "../../language/i18next";
 import { useTranslation } from "react-i18next";
+import { ALCHEMIST } from "../imgs/expimg";
 
 
 function Location(props) {
@@ -18,7 +19,9 @@ function Location(props) {
         ></iframe>
         <div className="w-[400px] py-2 px-4 flex flex-col gap-3">
           <h1 className="text-3xl">{t("Location-city-name")}</h1>
-          <div className="w-full h-40 bg-yellow-300"></div>
+          <div className="w-full h-40">
+            <img className="w-full h-full bg-center" src={ALCHEMIST} alt="" />
+          </div>
 
           <h3 className="text-white border-b border-[#797777]">
             {t("Location-adress-name")}

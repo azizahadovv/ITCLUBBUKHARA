@@ -3,3 +3,4 @@ export { default as LOGO } from "./imglogo.svg";
 export { default as WEB } from "./web_Development.png";
 export { default as BESIC} from "./besic_operator.png"
 export { default as MOBILE} from "./Mobile.png"
+export { default as ALCHEMIST} from "./alchemist.png"
