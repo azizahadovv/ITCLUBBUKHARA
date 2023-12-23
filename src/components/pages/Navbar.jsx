@@ -31,13 +31,13 @@ function Navbar({ setModalVisible, modalVisible }) {
             value={localStorage.getItem("lang")} // activeLanguage o'rniga localStorage dan olingan tilni ishlatamiz
             onChange={(e) => i18n.changeLanguage(e.target.value)}
           >
-            <option className="bg-white text-black" value="uz">
+            <option className="text-black bg-white" value="uz">
               uz
             </option>
-            <option className="bg-white text-black" value="ru">
+            <option className="text-black bg-white" value="ru">
               ru
             </option>
-            <option className="bg-white text-black" value="eng">
+            <option className="text-black bg-white" value="eng">
               eng
             </option>
           </select>
