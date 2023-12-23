@@ -1,6 +1,10 @@
 import React from "react";
+import "../../language/i18next";
+import { useTranslation } from "react-i18next";
+
 
 function Location(props) {
+  const { t } = useTranslation();
   return (
     <div className="w-full min-h-[500px]  flex items-center justify-center my-6 text-white">
       <div className="flex tablet:items-start  minMobil:items-center flex-wrap tabletIst:justify-center minMobil:justify-center tablet:px-7 minMobil:px-3 py-10 bg-[rgba(0,0,0,.4)] brightness-95  w-3xl min-h-max rounded-xl gap-10">
@@ -13,25 +17,25 @@ function Location(props) {
           referrerPolicy="no-referrer-when-downgrade" // <-- to'g'ri yozilgan qismi
         ></iframe>
         <div className="w-[400px] py-2 px-4 flex flex-col gap-3">
-          <h1 className="text-3xl">BUKHARA</h1>
+          <h1 className="text-3xl">{t("Location-city-name")}</h1>
           <div className="w-full h-40 bg-yellow-300"></div>
 
           <h3 className="text-white border-b border-[#797777]">
-            Buxoro shahar Qayum murtazoyev{" "}
+            {t("Location-adress-name")}
           </h3>
 
           <div className="border-b border-[#797777]">
-            <span className="text-[17px]   text-[#667085]">Mo‘ljal</span>
+            <span className="text-[17px]   text-[#bfc2ca]">{t("Location-loc")}</span>
             <h3 className="text-2xl text-white">
-              Texnologiya Instituti ro'parasi, Joker Game Club pastida.
+              {t("Location-local-name")}
             </h3>
           </div>
           <div className="border-b border-[#797777]">
-            <span className="text-[17px]   text-[#bfc2ca]">Ish vaqti</span>
+            <span className="text-[17px]   text-[#bfc2ca]">{t("Location-work-time")}</span>
             <h3 className="text-2xl text-white">09:00 - 18:00</h3>
           </div>
           <div className="border-b border-[#797777]">
-            <span className="text-[17px]   text-[#bfc2ca]">Telefon</span>
+            <span className="text-[17px]   text-[#bfc2ca]">{t("Location-phone-number")}</span>
             <h3 className="text-2xl text-white">+998 97 861 11 99</h3>
           </div>
         </div>
