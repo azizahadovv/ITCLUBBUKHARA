@@ -10,7 +10,6 @@ function Introduction(props) {
                 <span className='text-4xl text-white'>{t("Introduction-title")}</span>
                 <p className='text-xl text-white mt-7'>{t("Introduction-text")}</p>
             </div>
-
         </div>
     );
 }
