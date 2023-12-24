@@ -38,6 +38,7 @@ function Home() {
             <FOOTER Toaster1={Toaster1} />
             <REGISTER setModalVisible={setModalVisible} modalVisible={modalVisible} Toaster={Toaster} />
             <ToastContainer />
+            
         </div>
     );
 }
