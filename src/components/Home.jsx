@@ -1,7 +1,7 @@
 // import { LOADER } from './exporPage';
-import { ABOUT, APPROACH, COURSES, FOOTER, HERO, INTRODUCTION, LOCATION, NAVBAR } from './pages/homeExp';
-import React, { useEffect, useState } from 'react';
-import { LOADER, REGISTER } from './exporPage';
+import { ABOUT, COURSES, FOOTER, HERO, INTRODUCTION, LOCATION, NAVBAR } from './pages/homeExp';
+import React, { useState } from 'react';
+import { REGISTER } from './exporPage';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -31,12 +31,11 @@ function Home() {
             <NAVBAR setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <HERO setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <INTRODUCTION />
-            {/* <APPROACH /> */}
+            {/* Aproachni o'rni  */}
             <ABOUT />
             <COURSES />
             <LOCATION />
             <FOOTER Toaster1={Toaster1} />
-            {/* <LOADER /> */}
             <REGISTER setModalVisible={setModalVisible} modalVisible={modalVisible} Toaster={Toaster} />
             <ToastContainer />
         </div>

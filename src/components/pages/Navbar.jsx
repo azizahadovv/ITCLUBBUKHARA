@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { LOGO } from "../imgs/expimg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -9,8 +9,8 @@ function Navbar({ setModalVisible, modalVisible }) {
   // console.log(activeLanguage);
 
   return (
-    <div className="w-full min-h-[70px] bg-[rgba(0,0,0,.8)] fixed z-50 px-5">
-      <nav className="flex items-center justify-between minMobil:w-full tablet:max-w-[900px] m-auto  h-[70px]">
+    <div className="w-full min-h-[70px] bg-[rgba(0,0,0,.8)] fixed z-50 minMobil:px-1 tablet:px-5">
+      <nav className="w-full minMobil:w-[100%] tablet:max-w-[900px] flex items-center justify-between   m-auto  h-[70px]">
         <Link
           to={"/"}
           className="flex items-center justify-center h-full overflow-hidden no-underline align-baseline"
@@ -20,7 +20,7 @@ function Navbar({ setModalVisible, modalVisible }) {
             src={LOGO}
             alt="#"
           />
-          <span className="flex items-center justify-center text-xl text-white">
+          <span className="flex items-center justify-center text-xl text-white minMobil:hidden tablet:block">
             IT.CLUB BUKHARA
           </span>
         </Link>
@@ -44,7 +44,7 @@ function Navbar({ setModalVisible, modalVisible }) {
 
           <button
             onClick={() => setModalVisible(true)}
-            className="tablet:px-5 tablet:py-2 minMobil:px-3 minMobil:py-2  tablet:text-white minMobil:text-white bg-[rgba(0,0,0,.5)] border  hover:bg-[rgba(255,255,255)] hover:text-black rounded-lg teblet:text-xl minMobil:text-base"
+            className="tablet:px-5 tablet:py-2 minMobil:px-3 minMobil:py-2 minMobil:hidden tablet:block  tablet:text-white minMobil:text-white bg-[rgba(0,0,0,.5)] border  hover:bg-[rgba(255,255,255)] hover:text-black rounded-lg teblet:text-xl minMobil:text-base"
           >
             {t("Navbar_button")}
           </button>

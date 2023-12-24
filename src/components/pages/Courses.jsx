@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function Courses(props) {
   const { t } = useTranslation();
   return (
-    <div className="min-h-[605px] flex flex-col items-center justify-around bg-[rgba(0,0,0,.4)] brightness-95 border-t border-b border-[rgba(156,152,152,.7)] text-white">
+    <div className="min-h-[605px] flex flex-col gap-3 minMobil:py-9 items-center justify-around bg-[rgba(0,0,0,.4)] brightness-95 border-t border-b border-[rgba(156,152,152,.7)] text-white">
       <h2 className="mb-[10px]">{t("Courses-Offered-title")}</h2>
       <div className="flex flex-wrap justify-around gap-5">
         <div className="w-[290px] h-[350px] flex flex-col rounded items-center justify-between transitionHover hover:bg-[rgba(0,0,0,.3)]">
